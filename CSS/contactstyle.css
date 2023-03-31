@@ -1,0 +1,120 @@
+@charset "utf-8";
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.contactBox nav {
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+	padding-top: 35px;
+	width: 85%;
+	align-items: center;
+	color: white;
+}
+.first ul li {
+	display: inline-block;
+	list-style-type: none;
+	margin-right: 38px;
+	color: white;
+	font-weight: bolder;
+	font-size: 16px;
+	font-family: atomic-age;
+	font-style: normal;	
+}
+
+first ul li a:hover{
+	color:red;
+	cursor: pointer
+	
+}
+
+ul li a {
+	text-decoration: none;
+	color: white;
+}
+
+.contactBox {
+	width: 100%;
+	height: 95vh;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.50) 0%,rgba(96,53,20,1.00) 100%), url(../images/about.html);
+	background-image: -moz-linear-gradient(270deg,rgba(0,0,0,0.50) 0%,rgba(96,53,20,1.00) 100%), url(../images/about.html);
+	background-image: -o-linear-gradient(270deg,rgba(0,0,0,0.50) 0%,rgba(96,53,20,1.00) 100%), url(../images/about.html);
+	background-image: linear-gradient(180deg,rgba(0,0,0,0.50) 0%,rgba(96,53,20,1.00) 100%), url(../images/about.html);
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+.contactBox form {
+	width: 90%;
+	max-width: 600px;
+		
+}
+
+.contactBox .container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 170px;
+}
+form .input-group label {
+	padding: 10px;
+	color: #FFFFFF;
+	left: 0;
+	top: 0;
+	position: absolute;
+	height: 100px;
+	transition: 0.3s;	
+}
+.container form .input-group {
+	margin-bottom: 30px;
+	position: relative;	
+}
+form .input-group input, textarea {
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	width: 100%;
+	border: 2px solid #FFFFFF;
+	color: #FFFFFF;
+	background: transparent;
+}
+.container form button {
+	padding: 10px 0;
+	width: 100%;
+	border: 2px solid #FFFFFF;
+	border-radius: 10px;
+	outline: none;
+	cursor: pointer;
+	background: transparent;
+	color: #FFFFFF;
+	font-weight: bold;	
+}
+form .input-group input:focus~label,
+form .input-group input:valid~label,
+form .input-group textarea:focus~label,
+form .input-group textarea:valid~label{
+	top: -35px;
+	font-size: 14px;	
+}
+.container form .row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.container form button:active {
+	transform: translateY(5px);
+	transition: 0.5s;
+}
+
+
+.container form .row .input-group{
+	flex-basis: 48%;
+}
+
